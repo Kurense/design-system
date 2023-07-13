@@ -10,7 +10,7 @@
 
 This template ships with the main React configuration files you'll need to get up and running fast.
 
-## 🚅 Quick start
+## 🚅 Quick start guide
 
 1.  **Create the application.**
 
