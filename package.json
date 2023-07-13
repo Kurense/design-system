@@ -71,5 +71,8 @@
     "react-dom": {
       "optional": true
     }
+  },
+  "dependencies": {
+    "@mui/material": "^5.14.0"
   }
 }

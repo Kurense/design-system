@@ -13,7 +13,7 @@ const packageJson = requireFile('./package.json');
 
 export default [
   {
-    input: 'src/index.js',
+    input: 'src/index.ts',
     output: [
       {
         file: packageJson.main,
@@ -30,7 +30,7 @@ export default [
     plugins: [
       peerDepsExternal(),
       resolve({
-        extensions: ['.js', '.jsx'],
+        extensions: ['.js', '.jsx', 'tsx', 'ts'],
       }),
       commonjs(),
       terser(),
