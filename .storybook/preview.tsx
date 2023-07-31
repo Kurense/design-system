@@ -1,9 +1,9 @@
 import React, { useMemo } from 'react'
+import type { Preview } from "@storybook/react"
 import { CssBaseline, ThemeProvider } from "@mui/material"
 import { baseTheme } from "../src/themes/base.theme"
 import { lightTheme } from "../src/themes/light.theme"
 import { darkTheme } from "../src/themes/dark.theme"
-/** @type { import('@storybook/react').Preview } */
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },

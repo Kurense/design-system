@@ -35,7 +35,7 @@ export default [
       commonjs(),
       terser(),
       babel({
-        extensions: ['.js', '.jsx'],
+        extensions: ['.js', '.jsx', 'ts', 'tsx'],
         exclude: 'node_modules/**',
       }),
     ],

@@ -3,7 +3,7 @@ import { Button as MuiButton, ButtonProps as MuiButtonProps } from '@mui/materia
 /**
  * Primary UI component for user interaction
  */
-type ButtonProps = {
+export type ButtonProps = {
   loading?: boolean
 } & MuiButtonProps
 
