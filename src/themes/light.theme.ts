@@ -84,7 +84,7 @@ export const lightTheme = createTheme({
     },
     MuiOutlinedInput: {
       styleOverrides: {
-        notchedOutline: ({ownerState}) => ({
+        notchedOutline: () => ({
           // backgroundColor: themeColors.blue4,
           border: `none`,
 

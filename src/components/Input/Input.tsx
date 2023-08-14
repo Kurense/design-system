@@ -1,4 +1,3 @@
-import React from 'react'
 import { Box, TextField, TextFieldProps } from '@mui/material'
 /**
  * Input component for UI

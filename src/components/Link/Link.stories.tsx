@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Link as MuiLink, LinkBaseProps } from '@mui/material';
+import { Link as MuiLink } from '@mui/material';
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction
 const meta = {
