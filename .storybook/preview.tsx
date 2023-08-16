@@ -1,4 +1,6 @@
 import React, { useMemo } from 'react'
+import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
+import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { CssBaseline, ThemeProvider } from "@mui/material"
 import { lightTheme } from "../src/themes/light.theme"
 import { darkTheme } from "../src/themes/dark.theme"
@@ -24,10 +26,12 @@ export const withMuiTheme = (Story, context) => {
   const theme = useMemo(() => THEMES[themeKey] || THEMES["light"], [themeKey]);
   
   return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <Story />
-    </ThemeProvider>
+    <LocalizationProvider dateAdapter={AdapterDayjs}>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <Story />
+      </ThemeProvider>
+    </LocalizationProvider>
   )
 };
 
