@@ -45,6 +45,9 @@ export const lightTheme = createTheme({
         root: {
           backgroundColor: themeColors.blue4,
           border: `1px solid transparent`,
+          '&.MuiInputBase-adornedEnd > .MuiInputAdornment-root > .MuiIconButton-root': {
+            color: themeColors.blue1,
+          },
           '&:hover': {
             border: `1px solid ${themeColors.blue2}`,
             boxShadow: `0px 0px 6px ${themeColors.blue2}`,
@@ -60,10 +63,6 @@ export const lightTheme = createTheme({
             backgroundColor: `#FDF4F4`,
             border: `1px solid transparent`,
             boxShadow: `none`,
-
-            // input: {
-            //   color: `#F29595`,
-            // },
           },
         },
         input: {

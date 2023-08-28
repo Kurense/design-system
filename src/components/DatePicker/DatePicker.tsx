@@ -10,6 +10,6 @@ export const DatePicker = ({
   
 }: DatePickerProps) => {
   return (
-    <MuiDatePicker />
+    <MuiDatePicker  />
   )
 }
