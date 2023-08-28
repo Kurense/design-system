@@ -107,5 +107,14 @@ export const lightTheme = createTheme({
         }
       }
     },
+    MuiMenuItem: {
+      styleOverrides: {
+        root: {
+          fontSize: '14px',
+          color: themeColors.gray1,
+          fontWeight: '700',
+        }
+      }
+    }
   }
 });
