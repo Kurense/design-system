@@ -22,7 +22,6 @@ function CustomTabPanel(props: TabPanelProps) {
       role="tabpanel"
       hidden={value !== index}
       id={`simple-tabpanel-${index}`}
-      aria-labelledby={`simple-tab-${index}`}
       {...other}
     >
       {value === index && (
@@ -37,7 +36,6 @@ function CustomTabPanel(props: TabPanelProps) {
 function a11yProps(index: number) {
   return {
     id: `simple-tab-${index}`,
-    'aria-controls': `simple-tabpanel-${index}`,
   };
 }
 
@@ -53,11 +51,11 @@ export const Tabs = ({
   return (
     <Box sx={{ width: '100%' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-        <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
+        <MuiTabs value={value} onChange={handleChange} aria-label="basic tabs example">
           <Tab label="Item One" {...a11yProps(0)} />
           <Tab label="Item Two" {...a11yProps(1)} />
           <Tab label="Item Three" {...a11yProps(2)} />
-        </Tabs>
+        </MuiTabs>
       </Box>
       <CustomTabPanel value={value} index={0}>
         Item One
