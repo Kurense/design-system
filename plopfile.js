@@ -16,13 +16,18 @@ export default function (plop) {
 		actions: [
 			{
 				type: 'add',
-				path: 'src/stories/{{titleCase name}}/{{pascalCase name}}.tsx',
+				path: 'src/components/{{titleCase name}}/{{pascalCase name}}.tsx',
 				templateFile: 'plop-templates/Component.tsx.hbs'
 			},
 			{
 				type: 'add',
-				path: 'src/stories/{{titleCase name}}/{{pascalCase name}}.stories.tsx',
+				path: 'src/components/{{titleCase name}}/{{pascalCase name}}.stories.tsx',
 				templateFile: 'plop-templates/Component.story.tsx.hbs'
+			},
+      {
+				type: 'add',
+				path: 'src/components/{{titleCase name}}/index.tsx',
+				templateFile: 'plop-templates/index.tsx.hbs'
 			},
 		],
 	});
