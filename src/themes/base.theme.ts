@@ -1,4 +1,5 @@
 import { createTheme } from "@mui/material";
+import "typeface-inter"
 
 export const themeColors = {
   blue1: `#2C79C9`,
@@ -55,7 +56,7 @@ export const baseTheme = createTheme({
     },
   },
   typography: {
-    fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif',
+    fontFamily: 'Inter, sans-serif',
     h1: {
       fontWeight: 700,
       fontSize: '1.75rem',
