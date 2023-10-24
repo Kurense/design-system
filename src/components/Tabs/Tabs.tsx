@@ -52,20 +52,14 @@ export const Tabs = ({
     <Box sx={{ width: '100%' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <MuiTabs value={value} onChange={handleChange} aria-label="basic tabs example">
-          <Tab label="All User" {...a11yProps(0)} />
-          <Tab label="Permission Group" {...a11yProps(1)} />
-          <Tab label="User Activity" {...a11yProps(2)} />
+          <Tab label="All User" {...a11yProps(0)}
+          sx={{ textTransform: 'capitalize' }}/>
+          <Tab label="Permission Group" {...a11yProps(1)}
+          sx={{ textTransform: 'capitalize' }}/>
+          <Tab label="User Activity" {...a11yProps(2)}
+          sx={{ textTransform: 'capitalize' }}/>
         </MuiTabs>
       </Box>
-      <CustomTabPanel value={value} index={0}>
-        Item One
-      </CustomTabPanel>
-      <CustomTabPanel value={value} index={1}>
-        Item Two
-      </CustomTabPanel>
-      <CustomTabPanel value={value} index={2}>
-        Item Three
-      </CustomTabPanel>
     </Box>
   );
 }
