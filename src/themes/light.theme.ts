@@ -115,6 +115,13 @@ export const lightTheme = createTheme({
           fontWeight: '700',
         }
       }
+    },
+    MuiTabs: {
+      styleOverrides: {
+        indicator: {
+          height: '6px',
+        },
+      }
     }
   }
 });
