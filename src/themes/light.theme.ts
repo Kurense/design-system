@@ -122,6 +122,19 @@ export const lightTheme = createTheme({
           height: '6px',
         },
       }
+    },
+    MuiTab: {
+      defaultProps: {
+        disableRipple: true,
+      },
+      styleOverrides: {
+        root: {
+          fontWeight: '700',
+          '&:not(Mui-selected)': {
+            color: themeColors.gray2,
+          }
+        }
+      }
     }
   }
 });
