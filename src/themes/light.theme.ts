@@ -120,6 +120,7 @@ export const lightTheme = createTheme({
       styleOverrides: {
         indicator: {
           height: '6px',
+          backgroundColor: themeColors.blue5
         },
       }
     },
@@ -130,6 +131,9 @@ export const lightTheme = createTheme({
       styleOverrides: {
         root: {
           fontWeight: '700',
+          '&.Mui-selected': {
+            color: themeColors.blue5
+          },
           '&:not(Mui-selected)': {
             color: themeColors.gray2,
           }

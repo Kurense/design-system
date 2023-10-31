@@ -6,6 +6,7 @@ export const themeColors = {
   blue2: `#65AAD6`,
   blue3: `#A6C0D9`,
   blue4: `#EBF2F9`,
+  blue5: `#3E8CED`,
   white: `#FFFFFF`,
   gray1: `#707070`,
   gray2: `#979899`,
