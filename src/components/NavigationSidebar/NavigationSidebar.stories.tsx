@@ -1,12 +1,18 @@
 // NavigationSidebar.stories.tsx
-import { Meta, Story } from '@storybook/react';
+
+import type { Meta, StoryObj } from '@storybook/react';
 import NavigationSidebar from './NavigationSidebar';
 
-export default {
+const meta = {
   title: 'Components/NavigationSidebar',
   component: NavigationSidebar,
-} as Meta;
+  tags: ['autodocs'],
+} satisfies Meta<typeof NavigationSidebar>
 
-const Template: Story = (args) => <NavigationSidebar {...args} />;
+export default meta;
+type Story = StoryObj<typeof meta>
 
-export const Default = Template.bind({});
+export const Example: Story = {
+  args: {
+  }
+}
