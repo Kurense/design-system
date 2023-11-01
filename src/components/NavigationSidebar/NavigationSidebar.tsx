@@ -18,6 +18,7 @@ const CustomListItemButton = styled(ListItemButton)(({ theme, selected }) => ({
     '& .MuiListItemIcon-root, & .MuiListItemText-root': {
       color: '#3E8CED',
     },
+    borderLeft: `4px solid #3E8CED`, // Add a left border with the color #3E8CED
   },
 }));
 
@@ -45,7 +46,7 @@ const NavigationSidebar: React.FC = () => {
             </ListItemIcon>
             <ListItemText
               primary={text[0]}
-              primaryTypographyProps={{ style: {fontWeight: 'bold'} }}
+              primaryTypographyProps={{ style: { fontWeight: 'bold' } }}
             />
           </CustomListItemButton>
         ))}
