@@ -40,6 +40,7 @@ export const lightTheme = createTheme({
         }),
       },
     },
+
     MuiInputBase: {
       styleOverrides: {
         root: {
@@ -113,6 +114,33 @@ export const lightTheme = createTheme({
           fontSize: '14px',
           color: themeColors.gray1,
           fontWeight: '700',
+        }
+      }
+    },
+    MuiTabs: {
+      styleOverrides: {
+        root: {
+          marginLeft: '1.4em',
+        },
+        indicator: {
+          height: '6px',
+          backgroundColor: themeColors.blue5
+        },
+      }
+    },
+    MuiTab: {
+      defaultProps: {
+        disableRipple: true,
+      },
+      styleOverrides: {
+        root: {
+          fontWeight: '700',
+          '&.Mui-selected': {
+            color: themeColors.blue5
+          },
+          '&:not(Mui-selected)': {
+            color: themeColors.gray2,
+          }
         }
       }
     }
