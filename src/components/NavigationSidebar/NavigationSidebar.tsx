@@ -1,10 +1,19 @@
 import React, { useState } from 'react';
-import { Drawer, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material';
+import { Drawer, List, ListItemButton, ListItemIcon, ListItemText, Typography, styled } from '@mui/material';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import PeopleIcon from '@mui/icons-material/People';
 import PaymentIcon from '@mui/icons-material/Payment';
 import SyncIcon from '@mui/icons-material/Sync';
 import InventoryIcon from '@mui/icons-material/Inventory';
+
+const CustomListItemButton = styled(ListItemButton)(({ theme, selected }) => ({
+  '&:hover': {
+    backgroundColor: selected ? theme.palette.background.paper : '#EBF2F9',
+  },
+  '&.Mui-selected': {
+    backgroundColor: '#F5F5F5',
+  },
+}));
 
 const NavigationSidebar: React.FC = () => {
   const [selectedItem, setSelectedItem] = useState<number | null>(null);
@@ -20,8 +29,7 @@ const NavigationSidebar: React.FC = () => {
       </Typography>
       <List>
         {[['Dashboard', DashboardIcon], ['User Management', PeopleIcon], ['Cardholder Management', PaymentIcon], ['Data Synchronization', SyncIcon], ['Card Inventory', InventoryIcon]].map((text, index) => (
-          <ListItem
-            button
+          <CustomListItemButton
             key={text[0]}
             selected={selectedItem === index}
             onClick={() => handleListItemClick(index)}
@@ -30,7 +38,7 @@ const NavigationSidebar: React.FC = () => {
               {React.createElement(text[1] as any)}
             </ListItemIcon>
             <ListItemText primary={text[0]} />
-          </ListItem>
+          </CustomListItemButton>
         ))}
       </List>
     </Drawer>
