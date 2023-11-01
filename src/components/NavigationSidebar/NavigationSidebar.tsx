@@ -43,7 +43,10 @@ const NavigationSidebar: React.FC = () => {
             <ListItemIcon>
               {React.createElement(text[1] as any)}
             </ListItemIcon>
-            <ListItemText primary={text[0]} />
+            <ListItemText
+              primary={text[0]}
+              primaryTypographyProps={{ style: {fontWeight: 'bold'} }}
+            />
           </CustomListItemButton>
         ))}
       </List>
