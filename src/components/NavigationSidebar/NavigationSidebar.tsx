@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { Drawer, List, ListItemButton, ListItemIcon, ListItemText, Typography, styled } from '@mui/material';
 import DashboardIcon from '@mui/icons-material/Dashboard';
-import PeopleIcon from '@mui/icons-material/People';
-import PaymentIcon from '@mui/icons-material/Payment';
+import PersonOutlinedIcon from '@mui/icons-material/PersonOutlined';
+import GroupOutlinedIcon from '@mui/icons-material/GroupOutlined';
 import SyncIcon from '@mui/icons-material/Sync';
-import InventoryIcon from '@mui/icons-material/Inventory';
+import CreditCardOutlinedIcon from '@mui/icons-material/CreditCardOutlined';
 
 const CustomListItemButton = styled(ListItemButton)(({ theme, selected }) => ({
   '&:hover': {
@@ -35,7 +35,7 @@ const NavigationSidebar: React.FC = () => {
         iPay™
       </Typography>
       <List>
-        {[['Dashboard', DashboardIcon], ['User Management', PeopleIcon], ['Cardholder Management', PaymentIcon], ['Data Synchronization', SyncIcon], ['Card Inventory', InventoryIcon]].map((text, index) => (
+        {[['Dashboard', DashboardIcon], ['User Management', PersonOutlinedIcon], ['Cardholder Management', GroupOutlinedIcon], ['Data Synchronization', SyncIcon], ['Card Inventory', CreditCardOutlinedIcon]].map((text, index) => (
           <CustomListItemButton
             key={text[0]}
             selected={selectedItem === index}
