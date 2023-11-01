@@ -9,9 +9,15 @@ import InventoryIcon from '@mui/icons-material/Inventory';
 const CustomListItemButton = styled(ListItemButton)(({ theme, selected }) => ({
   '&:hover': {
     backgroundColor: selected ? theme.palette.background.paper : '#EBF2F9',
+    '& .MuiListItemIcon-root, & .MuiListItemText-root': {
+      color: '#3E8CED',
+    },
   },
   '&.Mui-selected': {
     backgroundColor: '#F5F5F5',
+    '& .MuiListItemIcon-root, & .MuiListItemText-root': {
+      color: '#3E8CED',
+    },
   },
 }));
 
