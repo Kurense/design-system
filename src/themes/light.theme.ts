@@ -40,6 +40,7 @@ export const lightTheme = createTheme({
         }),
       },
     },
+
     MuiInputBase: {
       styleOverrides: {
         root: {
@@ -118,6 +119,9 @@ export const lightTheme = createTheme({
     },
     MuiTabs: {
       styleOverrides: {
+        root: {
+          marginLeft: '1.4em',
+        },
         indicator: {
           height: '6px',
           backgroundColor: themeColors.blue5
